@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+
 </head>
 <body class="bg-[#f4f7ff]">
     <header class="bg-white max-w-7xl mx-auto mt-5 rounded-xl">
@@ -15,36 +16,38 @@
               <h2 class="ml-2 text-2xl">Dev<span class="font-bold text-2xl">Board</span></h2>
           </div>
           
-              <button id="backToDesk" class="bg-[#3752FD] px-3 py-2 text-white">Back to Desk</button>
+              <button id="backToDesk" class="bg-[#3752FD] px-3 py-2 text-white rounded-lg">Back to Desk</button>
           
         </nav>
        
       </header>
       <main class="max-w-7xl mx-auto bg-[#f4f7ff]">
-        <h1 class="text-center">Blogs</h1>
-        <div class="bg-white my-2">
-            <h2>Question-1: What are the different ways to select an element in the DOM?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, laudantium!</p>
+        <h1 class="text-center text-2xl font-bold">Blogs</h1>
+        <div class="bg-white my-2 p-4">
+            <h2 class=" dotted-indigo-500 border-b-2 p-2 text-xl font-bold">What are the different ways to select an element in the DOM?</h2>
+            <p class="mt-2 p-2 text-gray-700">Selecting difference element in JavaScript using dom method like Using getElementById,getElementsByClassName,getElementsByTagName, querySelector, querySelectorAll.</p>
+
+        </div>
+        <div class="bg-white my-2 p-4">
+            <h2 class=" dotted-indigo-500 border-b-2 p-2 text-xl font-bold">What is the difference between innerHTML, innerText, and textContent<h2>
+            <p class="p-2 mt-2 text-gray-700 ">When you use the innerHTML property, it reads both the HTML markup and the text content of the element.
+                his property focuses on the rendered text content. When you use innerText to read the content of an element.The textContent property also ignores all HTML tags and returns only the text.
+            </p>
         </div>
 
-        <div class="bg-white my-2">
-            <h2>Question-2: What is the difference between innerHTML, innerText, and textContent<h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, laudantium!</p>
+        <div class="bg-white my-2 p-4">
+            <h2 class=" dotted-indigo-500 border-b-2 p-2 text-xl font-bold"> What is event delegation in the DOM?</h2>
+            <p class="p-2 mt-2 text-gray-700 ">Event delegation in JavaScript is a pattern that efficiently handles events. Events can be added to a parent element instead of adding to every single element.</p>
         </div>
 
-        <div class="bg-white my-2">
-            <h2>Question-3: What is event delegation in the DOM?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, laudantium!</p>
+        <div class="bg-white my-2 p-4">
+            <h2 class=" dotted-indigo-500 border-b-2 p-2 text-xl font-bold"> What is event bubbling in the DOM?</h2>
+            <p class="p-2 mt-2 text-gray-700 ">Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.</p>
         </div>
 
-        <div class="bg-white my-2">
-            <h2>Question-4: What is event bubbling in the DOM?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, laudantium!</p>
-        </div>
-
-        <div class="bg-white my-2">
-            <h2>Question-5: How do you create, add, and remove elements using JavaScript?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, laudantium!</p>
+        <div class="bg-white my-2 p-4">
+            <h2 class=" dotted-indigo-500 border-b-2 p-2 text-xl font-bold">How do you create, add, and remove elements using JavaScript?</h2>
+            <p class="p-2 mt-2 text-gray-700 ">I can use createElement for creating new element,i can use appendChild for add new element and also can use removeChild for removing element in JavaScript.</p>
         </div>
       </main>
       <script src="script/question.js"></script>

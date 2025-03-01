@@ -16,34 +16,26 @@ document.getElementById("discover").addEventListener("click", function () {
 });
 
 const date = new Date();
-
-const daysOfWeek = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+const month=date.getMonth();
+const daysOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const currentDayOfWeek = daysOfWeek[date.getDay()];
-
+const monthofYear = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+const currentMonth=monthofYear[month];
+const currentDate=date.getDate();
 const currentTime = date.toLocaleTimeString();
-const currentDate = date.getFullYear();
-
+const currentYear = date.getFullYear();
+const fullYear=`${currentMonth} ${currentDate} ${currentYear}`;
 document.getElementById("day").innerText = currentDayOfWeek;
-document.getElementById("date").innerText = currentDate;
+document.getElementById("date").innerText = fullYear;
 
-let decreaseCount = parseInt(
-  document.getElementById("decrease-count").innerText
-);
+let decreaseCount = parseInt( document.getElementById("decrease-count").innerText);
 let increaseCount = parseInt(document.getElementById("increase-btn").innerText);
 
 const allBtn = document.querySelectorAll(".complete-btn");
 for (let i = 0; i < allBtn.length; i++) {
   const btn = allBtn[i];
   btn.addEventListener("click", function () {
-    if (decreaseCount > 0) {
+    if (decreaseCount > 0 && increaseCount>0) {
       alert("Board updated Sucessfully");
       decreaseCount--;
       document.getElementById("decrease-count").innerText = decreaseCount;
