@@ -1,18 +1,18 @@
 function getRandomColor() {
-  var letters = "0123456789ABCDEF";
-  var color = "#";
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+var letters = "0123456789ABCDEF";
+var color = "#";
+for (let i = 0; i < 6; i++) {
+     color += letters[Math.floor(Math.random() * letters.length)];
+    }
+    return color;
 }
 
 document.getElementById("theme-btn").addEventListener("click", function () {
-  document.getElementById("body").style.backgroundColor = getRandomColor();
+document.getElementById("body").style.backgroundColor = getRandomColor();
 });
 
 document.getElementById("discover").addEventListener("click", function () {
-  window.location.href = "./blog.html";
+window.location.href = "./blog.html";
 });
 
 const date = new Date();
@@ -33,8 +33,8 @@ let increaseCount = parseInt(document.getElementById("increase-btn").innerText);
 
 const allBtn = document.querySelectorAll(".complete-btn");
 for (let i = 0; i < allBtn.length; i++) {
-  const btn = allBtn[i];
-  btn.addEventListener("click", function () {
+    const btn = allBtn[i];
+    btn.addEventListener("click", function () {
     alert("Board updated Sucessfully");
     decreaseCount--;
     document.getElementById("decrease-count").innerText = decreaseCount;
@@ -53,15 +53,15 @@ for (let i = 0; i < allBtn.length; i++) {
     const headingText = heading.innerText;
     const list = document.getElementById("list");
     const li = document.createElement("li");
-    li.classList.add("bg-[#f4f7ff]", "p-4", "mt-2", "rounded-lg");
+    li.classList.add("bg-[#f4f7ff]", "p-4", "mt-2", "rounded-lg","text-sm");
     li.innerText = `You have Complete The Task ${headingText} at ${currentTime}`;
     list.appendChild(li);
   });
 }
 
 document.getElementById("clear-btn").addEventListener("click", function () {
-  const list = document.getElementById("list");
-  list.remove();
+   const list = document.getElementById("list");
+   list.remove();
 });
 
 
